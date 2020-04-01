@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  govote-nginx:
+    image: nginx:1.15-alpine
+    ports:
+      - "11443:443"
+    volumes:
+      - /govote/volumes/nginx:/etc/nginx/conf.d

@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  govote:
+    image: govote/govote:test
+    volumes:
+      - /govote/volumes/govote/test/etc:/etc/govote
+    environment:
+      - "SPRING_PROFILES_ACTIVE=test"
