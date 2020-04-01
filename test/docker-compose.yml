@@ -2,6 +2,8 @@ version: '3.7'
 services:
   govote:
     image: govote/govote:test
+    ports:
+      - "11080:8080"
     volumes:
       - /govote/volumes/govote/test/etc:/etc/govote
     environment:
