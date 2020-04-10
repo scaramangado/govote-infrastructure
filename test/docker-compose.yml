@@ -2,6 +2,7 @@ version: '3.7'
 services:
   govote:
     image: govote/govote:test
+    restart: unless-stopped
     ports:
       - "11080:8080"
     volumes:
